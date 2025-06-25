@@ -13,7 +13,7 @@
       <a href="#program">Program</a>
       <a href="#materi">Materi</a>
       <a href="#testimoni">Testimoni</a>
-      <a href="#kontak">Kontak</a>
+      <a href="#Pendaftaran">Kontak</a>
       </nav>
   </header>
   <section class="hero">
@@ -67,17 +67,24 @@
       <span>- Siti, Orang Tua Siswa</span>
     </blockquote>
   </section>
-  <section id="kontak">
-    <h3>Hubungi Kami</h3>
-    <form>
-      <input type="text" placeholder="Nama" required>
-      <input type="email" placeholder="Email" required>
-      <textarea placeholder="Pesan atau pertanyaan"></textarea>
-      <button type="submit">Kirim</button>
-    </form>
-    <p>Atau hubungi WA: 08xx-xxxx-xxxx</p>
-  </section>
-  <footer>
+  <section id="pendaftaran">
+   <h3>Pendaftaran Siswa Baru</h3>
+  <form action="https://formspree.io/f/your-form-id" method="POST">
+    <input type="text" name="nama" placeholder="Nama Lengkap" required>
+    <input type="email" name="email" placeholder="Email Aktif" required>
+    <input type="tel" name="nohp" placeholder="No. HP / WhatsApp" required>
+    <select name="jenjang" required>
+      <option value="">-- Pilih Jenjang --</option>
+      <option value="SD">SD</option>
+      <option value="SMP">SMP</option>
+      <option value="SMA">SMA</option>
+    </select>
+    <textarea name="pesan" placeholder="Pesan (opsional)"></textarea>
+    <button type="submit">Daftar Sekarang</button>
+  </form>
+  <p>Setelah mendaftar, tim kami akan menghubungi Anda melalui WhatsApp atau Email.</p>
+</section>
+     <footer>
     &copy; 2025 Jenius Plus. All rights reserved.
   </footer>
   <script src="script.js"></script>
